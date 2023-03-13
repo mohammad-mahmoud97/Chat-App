@@ -1,0 +1,359 @@
+/* body */
+body{
+  background-color: rgb(207, 206, 206);
+  scroll-behavior: smooth;
+}
+
+/* Register Page */
+
+section .register{
+  background-color: white;
+  width: 50%;
+  height: auto;
+  padding: 30px;
+  margin: 50px auto;
+  border: 0.7px solid gray;
+  text-align: center;
+}
+
+.image img{
+  width: 35vw;
+  height: auto;
+  display: flex;
+}
+
+.register .input-field{
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.birthday, .sex, .country{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.select-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-area select{
+  margin: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.birthday .box, .sex .box, .country .box {
+  width: 90%;
+  height: auto;
+  border: 1px solid #999;
+  font-size: 15px;
+  color: black;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.register .aggrement {
+  text-align: start;
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0;
+}
+
+.register .sign-up-btn{
+  width: 80%;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-size: 20px;
+}
+
+section .login-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: auto;
+  margin: 50px auto;
+  padding: 0px;
+  background-color: white;
+}
+
+section .image{
+  width: 60%;
+  height: auto;
+  background-color: rgb(207, 206, 206);
+}
+
+
+/* NewsFeed */
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main nav{
+  width: 15%;
+}
+
+.main .left-panel{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+}
+
+.left-panel li{
+  margin: 10px 5px;
+  list-style: none;
+  color: black;
+}
+
+.main .newsfeed{
+  width: 63%;
+}
+
+.create-post{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 95%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.create-post .create-post-header{
+  width: 100%;
+}
+
+.create-post .create-post-footer{
+  width: 100%;
+}
+.create-post-footer button{
+  width: 100%;
+}
+
+.create-post-header input{
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.post{
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 95%;
+  height: auto;
+  margin: 15px auto;
+  padding: 10px;
+  background-color: rgb(237, 236, 236);
+}
+
+.post .post-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post-header img{
+  width: 35px;
+  border-radius: 50%;
+  border: 0.7px solid grey;
+}
+
+.post-header p{
+  font-size: 1.1em;
+  margin: 0 5px;
+}
+
+.post .post-content{
+  margin: 10px 0;
+}
+
+.post .post-reactions{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+}
+
+.reaction-link:hover{
+  color: blue;
+  text-decoration: underline;
+}
+
+main .left-pane{
+  width: 80%;
+  height: auto;
+  padding: 0;
+}
+
+.cover-page img{
+  width: 100%;
+  padding: 20px;
+}
+
+.left-pane .friends-posts{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.left-pane .friends-area{
+  width: 40%;
+  height: auto;
+  margin: 20px 0;
+  margin: 10px;
+}
+
+.left-pane .posts-area{
+  width: 60%;
+  height: auto;
+  margin: 20px 0;
+  margin: 10px;
+}
+
+.site-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 30px;
+  background-color: #fff;
+}
+
+.search-bar{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 40%;
+}
+
+.site-head img{
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.search-bar input{
+  border: none;
+}
+
+.site-head .notifications{
+  width: 20%;
+  display: flex;
+}
+
+.notifications p{
+  margin: 0 20px;
+}
+
+.flexdb{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #cecbcb; */
+}
+
+.friends-section{
+  width: 20%;
+  height: auto;
+  border: 1px solid black;
+  margin-top: 0px;
+}
+
+.friends-section ul{
+  width: 100%;
+}
+
+.friends-section ul li{
+  margin: 0;
+  width: 100%;
+  background-color: #e3dcdc;
+}
+
+.friends-section ul{
+  list-style: none;
+}
+
+.friendItem{
+  border-bottom: 0.2px solid black;
+  width: 100%;
+}
+
+ul .lft{
+  height: auto;
+  width: 35%;
+}
+
+.lft img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+ul .rght{
+  width: 65%;
+  height: auto;
+}
+
+.rght p{
+  text-decoration: none;
+  color: black;
+
+}
+
+.chat-section{
+  width: 80%;
+  height: 100vh;
+  border: 1px solid black;
+  position: relative;
+}
+
+.chat-section .input-section{
+  border: 1px grey solid;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.input-section input{
+  width: 90%;
+  height: 100%;
+}
+
+.input-section button{
+  width: 10%;
+  height: 100%;
+}
+
+/* Footer Page */
+footer .foot{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.9em;
+  color: gray;
+}
+
+footer p{
+  color: gray;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8em;
+}
