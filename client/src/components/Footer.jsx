@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="container-fluid px-5 foot">
-        {footer_options.map((item) => <p>{item}</p>)}
+        {footer_options.map((item) => <p key={footer_options.indexOf(item)}>{item}</p>)}
       </div>
       <p>English . ©{new Date().getFullYear()} Chat App</p>
     </footer>

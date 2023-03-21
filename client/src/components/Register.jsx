@@ -304,7 +304,7 @@ export default function Register() {
     // const passwordHash = hash(password);
     // console.log(passwordHash);
   
-    fetchData("http://localhost:5001/register", "GET", "application", `firstName=${firstName}&lastName=${lastName}&userName=${userName}&email=${email}&password=${password}&country=${country}&sex=${sex}&dateOfBirth=${year}-${month}-${day}&coverImage=''&accountImage=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVnnwZ_qxZLfyPsjZR2NIZ78jzxSdColIWSUtPvFEPGw&s&friendRequestCounter=${0}`, checkServerResponse);
+    fetchData("http://localhost:5078/register", "GET", "application", `firstName=${firstName}&lastName=${lastName}&userName=${userName}&email=${email}&password=${password}&country=${country}&sex=${sex}&dateOfBirth=${year}-${month}-${day}&coverImage=''&accountImage=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVnnwZ_qxZLfyPsjZR2NIZ78jzxSdColIWSUtPvFEPGw&s&friendRequestCounter=${0}`, checkServerResponse);
   }
 
   useEffect(() => {

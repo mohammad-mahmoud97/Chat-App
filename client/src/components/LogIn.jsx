@@ -36,7 +36,7 @@ export default function LogIn() {
     let email = (document.getElementById("email")).value;
     let password = (document.getElementById("password")).value;
   
-    fetchData("http://localhost:5001/login", "GET", "application", `email=${email}&password_hash=${password}`, checkServerResponse);
+    fetchData("http://localhost:5078/login", "GET", "application", `email=${email}&password_hash=${password}`, checkServerResponse);
   }
 
   useEffect(() => {

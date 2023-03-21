@@ -322,6 +322,10 @@ ul .rght{
   position: relative;
 }
 
+.messages-section{
+  overflow-y: auto;
+}
+
 .chat-section .input-section{
   border: 1px grey solid;
   width: 100%;

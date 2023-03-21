@@ -14,19 +14,19 @@ export default function SiteHeader() {
 
   useEffect(() => {
     setTimeout(() => {
-      fetchData("http://localhost:5001/friendsRequests", "GET", "applications", `type=getAddFriendCounter&myID=${currentUser}`, setAddFriendCounter);
+      fetchData("http://localhost:5078/friendsRequests", "GET", "applications", `type=getAddFriendCounter&myID=${currentUser}`, setAddFriendCounter);
       if(addFriendCounter){
-        fetchData("http://localhost:5001/friendsRequests", "GET", "applications", `type=getAddFriendList&myID=${currentUser}`, setAddFriendsList);
+        fetchData("http://localhost:5078/friendsRequests", "GET", "applications", `type=getAddFriendList&myID=${currentUser}`, setAddFriendsList);
       }  
     }, 60000);
   });
 
   function handleAppoavedRequest(friendID) {
-    fetchData("http://localhost:5001/friendsRequests", "GET", "applications", `type=acceptAddFriend&fromID=${currentUser}&friendID=${friendID}`, null);
+    fetchData("http://localhost:5078/friendsRequests", "GET", "applications", `type=acceptAddFriend&fromID=${currentUser}&friendID=${friendID}`, null);
   }
 
   function handleRejectedRequest(friendID) {
-    fetchData("http://localhost:5001/friendsRequests", "GET", "applications", `type=rejectAddFriend&fromID=${currentUser}&friendID=${friendID}`, null);
+    fetchData("http://localhost:5078/friendsRequests", "GET", "applications", `type=rejectAddFriend&fromID=${currentUser}&friendID=${friendID}`, null);
   }
 
   function logout() {

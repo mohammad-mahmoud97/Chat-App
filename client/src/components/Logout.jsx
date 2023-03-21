@@ -8,7 +8,7 @@ export default function Logout(){
     
     useEffect(() => {
         console.log(JSON.parse(localStorage.getItem("currentUser")));
-        fetchData("http://localhost:5001/logout", "GET", "application", `userID=${JSON.parse(localStorage.getItem("currentUser"))}`, null);
+        fetchData("http://localhost:5078/logout", "GET", "application", `userID=${JSON.parse(localStorage.getItem("currentUser"))}`, null);
         localStorage.setItem("currentUser", 0);
         navigate("/login");
     })

@@ -10,7 +10,7 @@ function CreatePost(){
 
   function postCreate() {
     const currentDateTime = new Date().toISOString().slice(0, 19).replace('T', ' ');
-    fetchData("http://localhost:5001/", "GET", "application", `type=createPost&profileID=${currentUser}&postContent=${postContent}&mediaLocation=""&createdTime=${currentDateTime}`, null);
+    fetchData("http://localhost:5078/", "GET", "application", `type=createPost&profileID=${currentUser}&postContent=${postContent}&mediaLocation=""&createdTime=${currentDateTime}`, null);
   }
  
   return (

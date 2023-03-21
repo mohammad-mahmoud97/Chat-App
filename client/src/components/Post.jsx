@@ -11,14 +11,14 @@ export default function Post({post}) {
         const profileID = post.id;
         const postID = post.post_id;
         const currentDateTime = new Date().toISOString().slice(0, 19).replace('T', ' ');
-        fetchData("http://localhost:5001/", "GET", "application", `type=likePost&profileID=${profileID}&postID=${postID}&createdTime=${currentDateTime}`, null);
+        fetchData("http://localhost:5078/", "GET", "application", `type=likePost&profileID=${profileID}&postID=${postID}&createdTime=${currentDateTime}`, null);
     }
 
     function postComment() {
         const profileID = post.id;
         const postID = post.post_id;
         const currentDateTime = new Date().toISOString().slice(0, 19).replace('T', ' ');
-        fetchData("http://localhost:5001/", "GET", "application", `type=commentPost&profileID=${profileID}&postID=${postID}&createdTime=${currentDateTime}&commentText=dfds`, null);
+        fetchData("http://localhost:5078/", "GET", "application", `type=commentPost&profileID=${profileID}&postID=${postID}&createdTime=${currentDateTime}&commentText=dfds`, null);
     }
 
     return (

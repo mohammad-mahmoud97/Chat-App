@@ -26,13 +26,13 @@ function Profile() {
   }
 
   function addFriend(){
-    fetchData("http://localhost:5001/friendsRequests", "GET", "application", `type=sendAddFriendRequest&fromID=${currentUser}&friendID=${id}`, RequestSent);
+    fetchData("http://localhost:5078/friendsRequests", "GET", "application", `type=sendAddFriendRequest&fromID=${currentUser}&friendID=${id}`, RequestSent);
   }
 
   useEffect(() => {
     if(currentUser === 0)
       navigate("/login");
-    fetchData(`http://localhost:5001/profile/${id}`, "GET", "applications", `type=accountPost`, setPosts);
+    fetchData(`http://localhost:5078/profile/${id}`, "GET", "applications", `type=accountPost`, setPosts);
   }, []);
   
   return (

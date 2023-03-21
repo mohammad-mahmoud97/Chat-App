@@ -7,7 +7,6 @@ import FriendsList from './FriendsList';
 import Post from './Post';
 import SiteHeader from './SiteHeader';
 
-
 export default function NewsFeed(){
   
   const navbar = ["NewsFeed", "Groups"];
@@ -21,13 +20,12 @@ export default function NewsFeed(){
     if(currentUser === 0)
       navigate("/login");
     console.log(currentUser);
-    fetchData("http://localhost:5001/", "GET", "application", `accountID=${currentUser}&limit=${postsLimit}`, setPosts);
+    fetchData("http://localhost:5078/", "GET", "application", `accountID=${currentUser}&limit=${postsLimit}`, setPosts);
   }, [])
   
   return (
     <section>
       <SiteHeader />
-
       <div className="main">
         <nav className='left-panel'>
             {navbar.map((item) => <Link to={item.toLowerCase()} key={navbar.indexOf(item)}><li>{item}</li></Link>)}
@@ -35,7 +33,7 @@ export default function NewsFeed(){
 
         <div className="newsfeed">
           <CreatePost />
-          {posts.map((post) => <Post post={post} />)}
+          {posts.map((post) => <Post key={posts.indexOf(post)} post={post} />)}
         </div>
 
         <FriendsList />
